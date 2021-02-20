@@ -1,9 +1,11 @@
-import { a } from "../src";
+import { EdmV2, EdmV4 } from "../src";
+describe('OData Primitive Types Test Suite', () => {
 
-describe('Demo Test Suite', () => {
+  it("should support import Edm Primitive Types objects", () => {
+    expect(EdmV2).not.toBeUndefined();
+    expect(EdmV4).not.toBeUndefined();
 
-  it('should equal to 1', () => {
-    expect(a).toBe(1);
   });
+
 
 });

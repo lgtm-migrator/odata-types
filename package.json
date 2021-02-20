@@ -1,7 +1,13 @@
 {
-  "name": "template",
+  "name": "@odata/primitive-types",
   "version": "0.0.1",
   "main": "lib/index.js",
+  "description": "OData (V2/V4) Primitive Types",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Soontao/odata-types"
+  },
+  "license": "MIT",
   "scripts": {
     "test": "jest --detectOpenHandles --passWithNoTests",
     "prebuild": "rimraf lib",
@@ -14,10 +20,13 @@
   "engines": {
     "node": ">=10"
   },
-  "dependencies": {},
+  "dependencies": {
+    "luxon": "^1.26.0"
+  },
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
     "@types/jest": "^26.0.20",
+    "@types/luxon": "^1.26.0",
     "@types/node": "^14.14.25",
     "@typescript-eslint/eslint-plugin": "^4.15.0",
     "@typescript-eslint/parser": "^4.15.0",
